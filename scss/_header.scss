@@ -1,0 +1,65 @@
+header {
+    display: flex;
+    height: 8rem;
+    width: 100%;
+    background: #000;
+
+    .container-gow {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        min-width: 100%;
+
+        .position-sony {
+            position: absolute;
+            left: 14em;
+        }
+        
+
+        .platform {
+            display: flex;
+            align-items: center;
+            
+            position: absolute;
+            right: 14em;
+
+            span {
+                font-weight: 600;
+                font-size: 1.6rem;
+                line-height: 17px;
+            }
+    
+            ul {
+                display: flex;
+                align-items: center;
+                gap: .8rem;
+                margin-left: 1.8rem;
+    
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    padding: .4rem .8rem;
+                    border: 1.5px solid #fff;
+                    border-radius: 3px;
+
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                    text-transform: uppercase;
+                    cursor: pointer;
+
+                    &:hover {
+                        border: 1.5px solid rgba(255, 255, 255, 0.788);
+
+                        a {
+                            color: rgba(255, 255, 255, 0.788);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

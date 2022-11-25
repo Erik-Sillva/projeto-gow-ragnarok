@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Archivo', Arial, sans-serif;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #000201;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3265EA;
+    border-radius: 20px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #000201;
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}

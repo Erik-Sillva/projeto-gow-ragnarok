@@ -1,0 +1,436 @@
+.subtitle {
+    display: flex;
+    margin-bottom: 2.4rem;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    color: #fff;
+
+    @media (max-width: 1200px) {
+        span {
+            font-size: 1.8rem;
+        }
+    }
+
+    @media (max-width: 900px) {
+        justify-content: center;
+    }
+
+    @media (max-width: 480px) {
+        span {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 7.75rem;
+    line-height: 97.5%;
+
+    @media (max-width: 1200px) {
+        font-size: 8rem !important;
+    }
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 130%;
+}
+
+p {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 160%;
+    color: #BDC2CB;
+}
+
+.card-gow {
+    width: 100%;
+    max-width: 38.4rem;
+
+    .image-gow {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        height: 100%;
+        width: 100%;
+        margin-bottom: 2.4rem;
+        overflow: hidden;
+
+        img {
+            transition: transform .3s ease;
+        }
+
+        button {
+            position: absolute;
+            bottom: 0;
+            padding: 1.8rem 3.6rem;
+            border-radius: 5px;
+            background: #3265EA;
+
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 2rem;
+
+            opacity: 0;
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+    }
+
+    .info-gow {
+        h3 {
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 2rem;
+            margin-bottom: 7px;
+        }
+    
+        span {
+            font-size: 1.4rem;
+            line-height: 1.5rem;
+        }
+    }
+    &:hover {
+        .image-gow {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform .7s ease;
+                transform: scale(1.1);
+            }
+
+            button {
+                opacity: 1;
+                bottom: 5.7rem;
+
+                &:hover {
+                    color: rgba(255, 255, 255, 0.829);
+                }
+            }
+        }
+    }
+}
+
+/* -------------Media Queries------------- */
+
+//header
+
+@media (max-width: 767px) {
+    div.container-gow div.position-sony {
+        display: none;
+    }
+    div.container-gow div.position-gow {
+        width: 140px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 2em;
+    }
+    div.container-gow div.platform {
+        right: 2em;
+    }
+    div.container-gow div.platform span {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    header .container-gow .platform {
+        right: 2em;
+    }
+    header .container-gow .platform span {
+        display: none;
+    }
+}
+
+/* -------------Home------------- */
+
+//Notebook
+
+@media (max-width: 1200px) {
+
+    /* -------------s-hero------------- */
+
+    section.s-hero {
+        height: 67rem;
+        padding-top: 8.4rem;
+        padding-bottom: 8rem;
+
+        div.container-gow {
+            div.left {
+                margin-bottom: 4rem;
+                max-width: 64rem;
+
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+
+            div.right {
+                max-width: 35.7rem;
+                button {
+                    height: 19.7rem;
+                }
+            }
+        }
+    }
+
+    /* -------------s-info-geral------------- */
+
+    section.s-info-geral {
+        height: auto;
+        padding: 4rem 0;
+
+        ul {
+            flex-wrap: wrap;
+            gap: 3rem 0;
+
+            li {
+                width: 33.3%;
+            }
+        }
+    }
+
+    /* -------------s-story------------- */
+
+    section.s-story {
+        background: none;
+        padding: 6rem 0;
+
+        div.container-gow {
+            flex-direction: column-reverse;
+            align-items: center;
+
+            div.left {
+                max-width: 100%;
+                text-align: center;
+
+                h3.subtitle {
+                    justify-content: center;
+                }
+
+                h2 {
+                    max-width: 75%;
+                    margin: 2rem auto;
+                }
+            }
+
+            img.kratos-atreus {
+                top: 0;
+                left: 0;
+                margin-bottom: 6rem;
+            }
+        }
+    }
+
+    /* -------------s-characters------------- */
+
+    section.s-characters {
+        padding: 6rem 0;
+
+        div.container-gow {
+            div.description {
+                div.right {
+                    span {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Tablet
+
+@media (max-width: 900px) {
+
+    /* -------------s-hero------------- */
+
+    section.s-hero {
+        height: auto;
+        div.container-gow {
+            flex-direction: column;
+            align-items: center;
+
+            div.left {
+                text-align: center;
+
+                div.value {
+                    justify-content: center;
+                }
+            }
+
+            div.right {
+                top: 0;
+                text-align: center;
+
+                button {
+                    margin-bottom: 3rem;
+                }
+
+                div.year-old {
+                    flex-direction: column;
+
+                    p {
+                        margin-left: 0;
+                        margin-top: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /* -------------s-story------------- */
+
+    section.s-story {
+        div.container-gow {
+            div.left {
+                h2 {
+                    max-width: 95%;
+                }
+            }
+        }
+    }
+
+     /* -------------s-characters------------- */
+
+    section.s-characters {
+        div.container-gow {
+            div.description {
+                flex-direction: column;
+                align-items: center;
+
+                div.left {
+                    max-width: 100%;
+                    margin-bottom: 4rem;
+                    text-align: center;
+
+                    p {
+                        max-width: 60rem;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Mobile
+
+@media (max-width: 560px) {
+
+    /* -------------s-info-geral------------- */
+
+    section.s-info-geral {
+        ul {
+            li {
+                width: 50%;
+
+                span {
+                    max-width: 14.5rem;
+                }
+            }
+        }
+    }
+
+    /* -------------s-story------------- */
+
+    section.s-story {
+        div.container-gow {
+            div.left {
+                h2 {
+                    font-size: 3rem;
+                }
+
+                p {
+                    margin-bottom: 4rem;
+                    font-size: 1.6rem;
+                }
+
+                div.corp {
+                    flex-direction: column;
+
+                    span {
+                        margin-top: 3rem;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    /* -------------s-characters------------- */
+    section.s-characters {
+        padding: 6rem 0;
+
+        div.container-gow {
+            div.description {
+                div.left {
+                    h2 {
+                        font-size: 3rem;
+                    }
+
+                    p {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+//Extra Mobile
+
+@media (max-width: 480px) {
+
+    /* -------------s-hero------------- */
+
+    section.s-hero {
+        padding: 4rem 0;
+
+        div.container-gow {
+            div.left {
+                h1 {
+                    margin: 1.5rem 0;
+                    font-size: 6rem !important;
+                }
+
+                p {
+                    margin: 3rem auto;
+                }
+                
+                div.value {
+                    max-width: 35.7rem;
+                    margin: auto;
+                    flex-direction: column;
+    
+                    div.price {
+                        width: 100%;
+                        border-radius: 5px 5px 0 0;
+                    }
+    
+                    div.pre-venda {
+                        width: 100%;
+                        border-radius: 0 0 5px 5px;
+    
+                        a {
+                            width: 100%;
+                            padding: 0;
+    
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
