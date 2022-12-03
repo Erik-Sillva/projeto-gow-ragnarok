@@ -1,0 +1,233 @@
+/*-------------s-intro-------------*/
+
+body.b-history {
+    overflow: hidden;
+}
+
+div.leviatax {
+    width: 50px;
+    height: 50px;
+    z-index: 7;
+
+    position: absolute;
+    top: 10rem;
+    left: 4rem;
+}
+
+@keyframes dialog-zoom-enter {
+    from {
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+}
+
+.dialog-zoom-enter {
+    animation: dialog-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation-duration: .6s;
+    opacity: 1;
+}
+
+div.warning {
+    height: 100vh;
+    width: 100%;
+    z-index: 5;
+    overflow: hidden;
+    background: #090a0a;
+    transition: all .2s ease;
+
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div.content {
+        height: 60%;
+        max-width: 90%;
+
+        padding: 10rem;
+        border-radius: 10px;
+        box-shadow: 2px 3px 7px #ff0000;
+        background-color: #1e1f1f;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            font-size: 5rem;
+        }
+
+        h1 {
+            margin: .4em 0;
+            font-size: 5rem;
+        }
+
+        p {
+            span {
+                color: #3265ea;
+            }
+        }
+
+        input {
+            margin-top: 1em;
+            padding: 1em 2em;
+            border-radius: 5px;
+            background: #3265EA;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+}
+
+.show {
+    visibility: visible;
+}
+
+.opacity {
+    opacity: 0;
+}
+
+section.s-intro {
+    margin-bottom: 2rem;
+    div.container-gow {
+        display: flex;
+        justify-content: center;
+        padding: 4rem 0;
+
+        div.container-img {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    }
+}
+
+main {
+    z-index: 1;
+    background: #090a0a;
+}
+
+/*-------------s-history-------------*/
+
+section.s-history {
+    div.container-gow {
+        max-width: 100rem;
+        border-radius: 10px;
+        box-shadow: 3px 3px 15px #3265ea;
+        overflow: hidden;
+        article {
+            padding: 2rem;
+
+            div.h1 {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            h1 {
+                width: 400px;
+                margin: 0 auto;
+                font-size: 5rem;
+
+                position: relative;
+                text-align: center;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 50%;
+                    height: 2px;
+                    left: 0;
+                    bottom: 0;
+                    background: linear-gradient(to left, #3265EA, transparent);
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 50%;
+                    height: 2px;
+                    right: 0;
+                    bottom: 0;
+                    background: linear-gradient(to right, #3265EA, transparent);
+                }
+            }
+
+            p {
+                margin-top: 2em;
+                text-indent: 20px;
+                text-align: justify;
+                line-height: 1.7em;
+            }
+
+            div.history-img {
+                img {
+                    margin: 4em auto 0 auto;
+                }
+            }
+
+            div.launch {
+                margin: 7rem 0 5rem 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                span {
+                    margin-top: 1rem;
+                    font-size: 2.5em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    main {
+        section.s-intro {
+            div.container-gow {
+                div.container-img {
+                    max-width: 80%;
+                    img {
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    main {
+        padding-top: 5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    div.warning {
+        div.content {
+            padding: 5rem;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    div.warning {
+        div.content {
+            h1 {
+                font-size: 5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1030px) {
+    main {
+        section.s-history {
+            div.container-gow {
+                max-width: 90%;
+            }
+        }
+    }
+}

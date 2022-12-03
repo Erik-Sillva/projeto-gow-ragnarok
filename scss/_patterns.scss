@@ -26,12 +26,7 @@
 
 h1 {
     font-weight: 700;
-    font-size: 7.75rem;
     line-height: 97.5%;
-
-    @media (max-width: 1200px) {
-        font-size: 8rem !important;
-    }
 }
 
 h2 {
@@ -68,10 +63,8 @@ p {
         button {
             position: absolute;
             bottom: 0;
-            padding: 1.8rem 3.6rem;
             border-radius: 5px;
             background: #3265EA;
-
             font-weight: 700;
             font-size: 1.8rem;
             line-height: 2rem;
@@ -79,6 +72,12 @@ p {
             opacity: 0;
             cursor: pointer;
             transition: all .3s ease;
+
+            a {
+                display: block;
+                width: 100%;
+                padding: 1.8rem 3.6rem;
+            }
         }
     }
 
@@ -367,7 +366,6 @@ p {
 
     /* -------------s-characters------------- */
     section.s-characters {
-        padding: 6rem 0;
 
         div.container-gow {
             div.description {

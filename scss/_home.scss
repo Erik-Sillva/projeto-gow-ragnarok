@@ -31,7 +31,7 @@
             h1 {
                 margin-top: 2.4rem;
                 margin-bottom: 1.8rem;
-                font-size: 10rem;
+                font-size: 8rem;
             }
     
             p {
@@ -59,7 +59,8 @@
 
                 div.pre-venda {
                     border-radius: 0 5px 5px 0;
-                    background: #3265EA;
+                    background: #0048ff; 
+                    overflow: hidden;
                 }
     
                 strong {
@@ -78,7 +79,7 @@
 
                     &:hover {
                         color: rgba(255, 255, 255, 0.897);
-                        background: #3266eae5;
+                        background: #3265EA;
                     }
                 }
 
@@ -252,7 +253,6 @@
 }
 
 .s-characters {
-    height: 138.8rem;
     padding-top: 21.3rem;
     background: url(../img/bg-characters.png) no-repeat top center;
 

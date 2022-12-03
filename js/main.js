@@ -31,3 +31,14 @@ AOS.init({
     duration: 1000,
     once: true,
 })
+
+function validar() {
+    const box = document.querySelector(".warning");
+    box.remove('show');
+    const main = document.getElementsByTagName("main")[0];
+    main.classList.remove('opacity');
+
+    if (true) {
+        document.body.style.overflow = 'visible'
+    }
+}

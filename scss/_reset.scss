@@ -9,24 +9,23 @@
     font-family: 'Archivo', Arial, sans-serif;
     color: #fff;
 }
-
 ::-webkit-scrollbar {
     width: 10px;
     background-color: #000201;
 }
-
 ::-webkit-scrollbar-thumb {
     background: #3265EA;
     border-radius: 20px;
 }
-
 html, body {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     background: #000201;
     font-size: 62.5%;
 }
-
+body {
+    overflow-x: hidden !important;
+}
 img {
     max-width: 100%;
     display: block;
